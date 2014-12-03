@@ -1,7 +1,10 @@
 package com.smikevon.basic.language;
 
 import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -33,9 +36,21 @@ public class TestGenerics {
 
 		System.out.println(vector.size());
 
+        List<? super Integer>[] alist = new List[10];
 
+        alist[0] = new LinkedList<Object>();
 
-	}
+        List<String> clist = new LinkedList<String>();
+        clist.toArray();
+
+        Set<String> set1 = new HashSet<String>(Arrays.asList("a","b","c"));
+
+        Set<String> set2 = new HashSet<String>(Arrays.asList("d","e","f","g"));
+
+        Set<String> set3 = union(set1,set2);
+
+        System.out.println(set3);
+    }
 
 	public static void add(List<? extends Date> list,Date date){
 
@@ -68,6 +83,22 @@ public class TestGenerics {
 		 */
 		//Timestamp timestamp2 = list.get(0); 编译报错
 	}
+
+    public void testWildCard(){
+        List<?> list = new ArrayList<String>();
+        list.add(null);
+        //list.add("abc");
+    }
+
+    public static <E> Set<E>  union(Set<E> e1,Set<E> e2){
+        Set<E> set = new HashSet<E>(e1);
+        set.addAll(e2);
+        return set;
+    }
+
+    public static <k,v> HashMap<k,v> newHashmap(){
+        return new HashMap<k, v>();
+    }
 
 
 
