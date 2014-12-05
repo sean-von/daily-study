@@ -3,6 +3,30 @@ daily-study*
 target/
 *.class
 
+###thrift_lab
+thrift_lab/thrift_lab.*
+thrift_lab/target/
+
+###dp_lab
+dp_lab/dp_lab.*
+dp_lab/target/
+
+###jdk_lab
+jdk_lab/jdk_lab.*
+jdk_lab/target/
+
+###jcommander_lab
+jcommander_lab/jcommander_lab.*
+jcommander_lab/target/
+
+###spring_lab
+spring_lab/spring_lab.*
+spring_lab/target/
+
+
+
+
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
