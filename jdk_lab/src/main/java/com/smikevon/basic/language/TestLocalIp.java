@@ -1,8 +1,5 @@
 package com.smikevon.basic.language;
 
-
-import com.smikevon.iterator.Collection;
-
 import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.net.SocketException;
