@@ -23,6 +23,11 @@ jcommander_lab/target/
 spring_lab/spring_lab.*
 spring_lab/target/
 
+###netty_lab
+netty_lab/netty_lab.*
+netty_lab/netty_lab.iml
+netty_lab/target/
+
 
 
 
