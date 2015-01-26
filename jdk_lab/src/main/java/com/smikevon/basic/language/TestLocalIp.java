@@ -15,8 +15,8 @@ public class TestLocalIp {
         for(NetworkInterface nif : Collections.list(NetworkInterface.getNetworkInterfaces())){
             for(InetAddress address : Collections.list(nif.getInetAddresses())){
 
-                System.out.println(address.isSiteLocalAddress());
-                System.out.println(address.isLoopbackAddress());
+                //System.out.println(address.isSiteLocalAddress());
+                //System.out.println(address.isLoopbackAddress());
                 if(!address.isSiteLocalAddress()){
 
                 }

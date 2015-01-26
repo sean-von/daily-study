@@ -28,7 +28,9 @@ netty_lab/netty_lab.*
 netty_lab/netty_lab.iml
 netty_lab/target/
 
-
+###thrift_api
+thrift_api/thrift_api.*
+thrift_api/target/
 
 
 

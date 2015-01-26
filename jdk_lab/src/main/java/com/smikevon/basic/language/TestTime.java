@@ -51,5 +51,10 @@ public class TestTime {
 
 
         System.out.println(p2.getDays()+"|"+p2.getMinutes());
+
+        System.out.println("time:"+System.currentTimeMillis() / 1000L + 2208988800L);
+
+        System.out.println(sdf.format(new Date(1421953808421L)));
+
     }
 }
